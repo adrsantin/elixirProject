@@ -5,6 +5,7 @@ defmodule Identicon do
     |> hash_input
     |> pick_color
     |> build_grid
+    |> filter_odd_squares
   end
 
   def hash_input(input) do
@@ -33,5 +34,13 @@ defmodule Identicon do
   def mirror_row([first, second | _tail] = row) do
     # [145, 46, 200] -> [145, 46, 200, 46, 145]
     row ++ [second, first]
+  end
+
+  def filter_odd_squares(%Identicon.Image{grid: grid} = image) do
+    grid = Enum.filter grid, fn({code, _index} = square) -> 
+      rem(code, 2) == 0
+    end
+
+    %Identicon.Image{image | grid: grid}
   end
 end
