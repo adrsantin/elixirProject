@@ -1,0 +1,20 @@
+Request -> Router -> Check rules -> Designated controller and function
+
+Controller: Takes data from models, adapt them to views and returns to user
+
+render function looks for a html page and returns it
+
+Views and Templates:
+
+    View is connected to a Controller by name
+    All views names are loaded on boot
+    These names are linked to the templates with same name and the templates are 
+    loaded as functions of the views
+    
+To debug phoenix applications: `iex -S mix phoenix.server`
+This starts the server with the elixir console to call functions
+
+To create migrations (intructions to the database):
+`mix ecto.gen.migration <migration_name>`
+Change function instructs postgres on what to do
+To run migrations: `mix ecto.migrate`
