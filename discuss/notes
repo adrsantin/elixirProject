@@ -18,3 +18,14 @@ To create migrations (intructions to the database):
 `mix ecto.gen.migration <migration_name>`
 Change function instructs postgres on what to do
 To run migrations: `mix ecto.migrate`
+
+First, create new route
+    For every user intent, there is a Action (Get, Post, etc...) and a 
+    controller function name (REST)
+Then create new controller and function (Controller names are singular)
+    Function must return something
+When Creating model, must create schema according to DB table
+    Model takes care of validations
+
+On templates, `@variable_name` is a variable that comes from the controller,
+passed on the render function
