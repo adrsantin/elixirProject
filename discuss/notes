@@ -39,3 +39,5 @@ Oauth
 
 Request phase = sending the user to the authorization website
 Callback phase = the website redirects back to our site
+
+Always hide API keys!
