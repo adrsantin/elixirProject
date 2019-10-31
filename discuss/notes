@@ -33,3 +33,9 @@ See topic index.html.eex to know how to pass variables from controller
 to views
 
 `put_flash` sends a one time message to tamplate
+
+
+Oauth
+
+Request phase = sending the user to the authorization website
+Callback phase = the website redirects back to our site
