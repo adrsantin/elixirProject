@@ -41,3 +41,7 @@ Request phase = sending the user to the authorization website
 Callback phase = the website redirects back to our site
 
 Always hide API keys!
+
+When creating model after migration:
+    Define schema: `schema <table_name> do <columns>`
+    Create changeset: describe how to change records
