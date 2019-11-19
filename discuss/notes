@@ -46,3 +46,5 @@ If using .env file, run `source .env` beforehand.
 When creating model after migration:
     Define schema: `schema <table_name> do <columns>`
     Create changeset: describe how to change records
+
+halt() ignores following plugs and returns to user.
